@@ -1,14 +1,30 @@
 <ion-header>
-  <ion-navbar>
+      <ion-navbar color="primary">
+          <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+          </button>
     <ion-title>
-      Ionic Blank
+      iDreamBooks
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<!-- <ion-content padding>
   The world is your oyster.
   <p>
     If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
   </p>
+</ion-content> -->
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let person of books" (click)="movedetailpage(person.title, person.review_publication_logo)">
+      <ion-thumbnail item-start>
+                <img src="{{person.review_publication_logo}}">
+      </ion-thumbnail>
+      <h3 text-wrap>{{person.title}}</h3>
+      <p> {{person.review_date}}</p>
+      <p>{{person.author}}</p>
+    </ion-item>
+  </ion-list>
 </ion-content>

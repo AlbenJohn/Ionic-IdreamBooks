@@ -1,0 +1,121 @@
+page-login {
+    
+      .background{
+            background-color: #ffffff;
+           // background: url("../assets/icon/bg.jpg") no-repeat center;
+                font-family: "Trebuchet MS","Myriad Pro",Arial,sans-serif;
+    
+    
+      }
+    //   .cards{
+    //         background-color: #E5E5E5;
+    //         margin-top: 20% !important;
+    //   }
+    //   .input[type=text] {
+    //      width: 100%;
+    //     padding: 0px 5px;
+    //     margin: 8px 0;
+    //     box-sizing: border-box;
+    //     border: none;
+    //     border-bottom: 2px solid red;
+    // }
+    // .button_1 {
+    //     background-color: #0088ff;
+    //     border: none;
+    //     width:40%;
+    //     color: white;
+    //     padding: 15px 32px;
+    //     text-align: center;
+    //     text-decoration: none;
+    //     display: inline-block;
+    //     font-size: 16px;
+    //     margin: 1% 4%;
+    //     cursor: pointer;
+    // }
+    
+    form {
+        border: 3px solid #f1f1f1;
+    }
+    
+    input[type=text], input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    input:hover{
+    
+        border: 2px solid #0088ff;
+        background: rgba(238, 236, 240, 0.2);	
+        -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+           -moz-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+                box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+    }
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        font-size: 15px;
+        border: 1px solid #1259cc;
+        border-radius: 5px;
+    }
+    
+    button:hover {
+        opacity: 0.8;
+    }
+    
+    .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        background-color: #0088ff;
+        border: 1px solid #1259cc;
+        border-radius: 5px;
+    }   
+    
+    .imgcontainer {
+        text-align: center;
+        margin: 0px 0 12px 0;
+    }
+    
+    img.avatar {
+        // width: 40%;
+        // height: 40%;
+        // border-radius: 50%;
+        // background-image: url("../assets/icon/Profile_icon.png");
+        width: 27%;
+        height: 100px;
+        border-radius: 50%;
+        margin: 16px 0px 40px 0;
+        //background-image: url("../assets/icon/avatar.ico");
+        background-size: contain;
+    }
+    
+    .container {
+        padding: 16px;
+    }
+    
+    span.psw {
+        float: right;
+        padding-top: 16px;
+    }
+    
+    /* Change styles for span and cancel button on extra small screens */
+    @media screen and (max-width: 300px) {
+        span.psw {
+           display: block;
+           float: none;
+        }
+        .cancelbtn {
+           width: 100%;
+        }
+    }
+    
+    
+    }
+    
